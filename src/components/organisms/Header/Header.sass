@@ -1,0 +1,40 @@
+@use "@/styles/mixins" as m
+
+.header
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+  height: 48px
+  padding: 0 20px
+
+  @include m.respond(mobile)
+    height: 80px
+    padding: 0 30px
+
+  @include m.respond(tablet)
+    padding: 0 80px
+
+  &__logo
+    height: auto
+    width: 70px
+
+    @include m.respond(tablet)
+      width: 105px
+
+    &-icon
+      display: block
+      width: 100%
+      height: auto
+
+  &__nav--desktop
+    display: none
+
+    @include m.respond(mobile)
+      display: block
+
+  &__nav--mobile
+    display: block
+
+    @include m.respond(mobile)
+      display: none
