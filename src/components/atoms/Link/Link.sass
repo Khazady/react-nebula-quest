@@ -1,0 +1,12 @@
+@use "@/styles/functions" as f
+@use "@/styles/mixins" as m
+
+.link
+  color: f.color(text-primary)
+  cursor: pointer
+  font-size: 18px
+  font-weight: f.weight(bold)
+  text-decoration: none
+
+  &:hover
+    @include m.gradient-text()
