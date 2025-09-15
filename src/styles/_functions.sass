@@ -1,0 +1,25 @@
+@use "sass:map"
+@use "./variables" as v
+
+// getter
+@function token($group, $key)
+  $groups: (colors: v.$colors, breakpoints: v.$breakpoints, weights: v.$font-weight)
+  $map: map.get($groups, $group)
+
+  @if $map == null
+    @error "Token group '#{$group}' not found. Available groups: #{map.keys($groups)}"
+
+  @if not map.has-key($map, $key)
+    @error "Token '#{$group}.#{$key}' not found. Available keys: #{map.keys($map)}"
+
+  @return map.get($map, $key)
+
+// aliases
+@function color($key)
+  @return token(colors, $key)
+
+@function bp($key)
+  @return token(breakpoints, $key)
+
+@function weight($key)
+  @return token(weights, $key)

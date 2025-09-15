@@ -1,15 +1,11 @@
-@use "./variables" as v
-@use "sass:map"
+@use "./functions" as f
 
 @mixin respond($breakpoint)
-  @if map.has-key(v.$breakpoints, $breakpoint)
-    @media (min-width: map.get(v.$breakpoints, $breakpoint))
-      @content
-  @else
-    @error "Breakpoint '#{$breakpoint}' not found. Available: #{map.keys(v.$breakpoints)}"
+  @media (min-width: f.bp($breakpoint))
+    @content
 
-@function color($key)
-  @if map.has-key(v.$colors, $key)
-    @return map.get(v.$colors, $key)
-  @error "Color '#{$key}' not found. Available: #{map.keys(v.$colors)}"
-
+@mixin gradient-text($from: accent-primary, $to: accent-secondary, $angle: 98.25deg, $from-stop: 18.56%, $to-stop: 76.02%)
+  background: linear-gradient($angle, f.color($from) $from-stop, f.color($to) $to-stop)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  background-clip: text

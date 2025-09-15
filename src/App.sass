@@ -1,4 +1,4 @@
-@use "./styles/mixins" as m
+@use "./styles/functions" as f
 
 *, ::before, ::after
   margin: 0
@@ -13,7 +13,7 @@ html, body
 body
   line-height: 1.5
   -webkit-font-smoothing: antialiased
-  background-color: m.color(bg-page)
+  background-color: f.color(bg-page)
 
 img, picture, video, canvas, svg
   display: block
