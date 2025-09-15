@@ -18,6 +18,7 @@
   },
   "devDependencies": {
     "@eslint/js": "9.35.0",
+    "@svgr/plugin-svgo": "^8.1.0",
     "@types/react": "19.1.13",
     "@types/react-dom": "19.1.9",
     "@vitejs/plugin-react": "5.0.2",
@@ -29,7 +30,8 @@
     "sass": "1.92.1",
     "typescript": "5.8.3",
     "typescript-eslint": "8.43.0",
-    "vite": "7.1.5"
+    "vite": "7.1.5",
+    "vite-plugin-svgr": "^4.5.0"
   },
   "engines": {
     "node": "24.8.0",
