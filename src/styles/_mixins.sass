@@ -1,0 +1,15 @@
+@use "./variables" as v
+@use "sass:map"
+
+@mixin respond($breakpoint)
+  @if map.has-key(v.$breakpoints, $breakpoint)
+    @media (min-width: map.get(v.$breakpoints, $breakpoint))
+      @content
+  @else
+    @error "Breakpoint '#{$breakpoint}' not found. Available: #{map.keys(v.$breakpoints)}"
+
+@function color($key)
+  @if map.has-key(v.$colors, $key)
+    @return map.get(v.$colors, $key)
+  @error "Color '#{$key}' not found. Available: #{map.keys(v.$colors)}"
+
