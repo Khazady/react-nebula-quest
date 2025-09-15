@@ -1,0 +1,19 @@
+@use "@/styles/mixins" as m
+
+.nav-items
+
+  &__list
+    display: flex
+
+  &__item
+    display: flex
+    align-items: center
+
+  &--vertical &__list
+    flex-direction: column
+    gap: 15px
+
+  &--horizontal &__list
+    flex-direction: row
+    gap: 30px
+
