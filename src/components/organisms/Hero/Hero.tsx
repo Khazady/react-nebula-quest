@@ -16,7 +16,7 @@ export const Hero: React.FC = () => {
           {hero.subtitle}
           <span className="hero__subtitle-accent">{hero.subtitleAccent}</span>
         </p>
-        <Button className="hero__button">{hero.button}</Button>
+        <Button variant="primary">{hero.button}</Button>
       </div>
       <img className="hero__planet" src={planetUrl} alt="Planet"/>
     </section>
