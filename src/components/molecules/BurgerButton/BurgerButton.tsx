@@ -1,4 +1,4 @@
-import MenuIcon from "@/assets/Menu.svg?react";
+import MenuIcon from "@/assets/icons/Menu.svg?react";
 import {Button} from "@/components/atoms";
 import {cn} from "@/lib/utils/cn.ts";
 import type {BurgerButtonProps} from "./BurgerButton.types";

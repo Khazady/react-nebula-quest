@@ -1,5 +1,5 @@
-import CartIcon from "@/assets/Cart.svg?react";
-import LogoIcon from "@/assets/Logo.svg?react";
+import LogoIcon from "@/assets/brand/Logo.svg?react";
+import CartIcon from "@/assets/icons/Cart.svg?react";
 import {Link} from "@/components/atoms";
 import {BurgerButton, Drawer, NavItems} from "@/components/molecules";
 import "./Header.sass";

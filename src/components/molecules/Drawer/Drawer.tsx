@@ -1,4 +1,4 @@
-import Cross from "@/assets/Cross.svg?react";
+import Cross from "@/assets/icons/Cross.svg?react";
 import {Button} from "@/components/atoms";
 import {cn} from "@/lib/utils/cn.ts";
 import type {DrawerProps} from "./Drawer.types";
