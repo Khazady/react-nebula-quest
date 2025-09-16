@@ -1,3 +1,6 @@
+@use "@/styles/functions" as f
+@use "@/styles/mixins" as m
+
 .button
   background: transparent
   border: 0
@@ -8,3 +11,19 @@
   align-items: center
   justify-content: center
 
+.button--primary
+  background: f.color(accent-primary)
+  color: f.color(bg-chrome)
+  font-weight: f.weight(bold)
+
+  border-radius: 100px
+  padding: 7px 40px
+  font-size: 16px
+  transition: opacity .2s ease
+
+  &:hover
+    opacity: 0.6
+
+  @include m.from(tablet)
+    padding: 14px 40px
+    font-size: 22px
