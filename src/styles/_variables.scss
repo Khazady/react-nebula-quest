@@ -9,12 +9,12 @@ $colors: (
 ) !default;
 
 $breakpoints: (
-  mobile: 768px,
-  tablet: 1248px,
+  mobile: 360px,
+  tablet: 768px,
+  desktop: 1248px,
 ) !default;
 
 $font-weight: (
   bold: 700,
   extrabold: 800,
 ) !default;
-

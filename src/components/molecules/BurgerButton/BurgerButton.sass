@@ -1,0 +1,17 @@
+@use "@/styles/mixins" as m
+
+.burger-button
+  background: transparent
+  border: 0
+  padding: 8px
+  margin: 0
+  display: block
+  cursor: pointer
+
+  @include m.respond(tablet)
+    display: none
+
+  &__icon
+    display: block
+    width: 30px
+    height: 38px
