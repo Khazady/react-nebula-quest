@@ -1,0 +1,98 @@
+@use "@/styles/functions" as f
+@use "@/styles/mixins" as m
+
+.hero
+  height: 451px
+  width: 100%
+  position: relative
+  overflow: hidden
+  background: f.gradient(overlay-bottom), url('./bg-hero.webp') center / cover no-repeat, f.color(bg-primary)
+  white-space: pre-line
+
+  @include m.flex-center
+  @include m.from(tablet)
+    height: 420px
+    justify-content: start
+  @include m.from(desktop)
+    height: 490px
+
+
+.hero__content
+  z-index: 1
+
+  @include m.flex-center
+  flex-direction: column
+  gap: 17px
+  text-align: center
+  margin: auto 0 44px
+
+  @include m.from(tablet)
+    text-align: start
+    align-items: start
+    gap: 22px
+    margin: 0 0 0 30px
+  @include m.from(desktop)
+    margin: 0 0 0 81px
+
+.hero__title
+  font-size: 36px
+  font-weight: f.weight(extrabold)
+
+  @include m.from(tablet)
+    font-size: 48px
+  @include m.from(desktop)
+    font-size: 72px
+
+.hero__title-accent
+  color: f.color(accent-secondary)
+
+.hero__subtitle
+  font-size: 16px
+  font-weight: f.weight(extrabold)
+
+  @include m.from(tablet)
+    font-size: 22px
+  @include m.from(desktop)
+    font-size: 32px
+
+.hero__subtitle-accent
+  color: f.color(accent-primary)
+
+.hero__button
+  background: f.color(accent-primary)
+  color: f.color(bg-chrome)
+  font-weight: f.weight(bold)
+
+  border-radius: 100px
+  padding: 7px 40px
+  font-size: 16px
+  transition: opacity .2s ease
+
+  &:hover
+    opacity: 0.6
+
+  @include m.from(tablet)
+    padding: 14px 40px
+    font-size: 22px
+
+
+.hero__planet
+  position: absolute
+
+  top: -105px
+  left: 16px
+
+  width: 300px
+  min-width: 300px
+  height: 336px
+
+  @include m.from(tablet)
+    top: 26px
+    left: unset
+    right: -90px
+  @include m.from(desktop)
+    top: 59px
+    left: unset
+    right: 70px
+
+

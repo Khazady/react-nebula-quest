@@ -3,8 +3,11 @@ export const dictionary = {
     nav: ['Home', 'Products']
   },
   hero: {
-    title: 'Discover the vast expanses of space',
-    subtitle: 'Where the possibilities are endless!'
+    title: 'Discover the vast \n expanses of ',
+    titleAccent: 'space',
+    subtitle: 'Where the possibilities are ',
+    subtitleAccent: 'endless!',
+    button: 'Learn more'
   },
   offers: {
     title: 'Offers',
