@@ -1,29 +1,36 @@
-import Cart from "@/assets/Cart.svg?react";
-import Logo from "@/assets/Logo.svg?react";
+import CartIcon from "@/assets/Cart.svg?react";
+import LogoIcon from "@/assets/Logo.svg?react";
 import {Link} from "@/components/atoms";
-import {NavItems} from "@/components/molecules";
+import {BurgerButton, Drawer, NavItems} from "@/components/molecules";
 import "./Header.sass";
 import {dictionary} from "@/lib/dictionary.ts";
+import {useState} from "react";
 
 export const Header = () => {
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
   const navLinks = [
     ...dictionary.header.nav.map((label) => (
       <Link key={label} href="#">{label}</Link>
     )),
     <Link key="cart" href="#" className="header__cart">
       {/*todo: hover gradient*/}
-      <Cart className="header__cart-icon"/>
+      <CartIcon className="header__cart-icon"/>
     </Link>
   ];
 
   return (
     <header className="header">
       <Link href="/" className='header__logo'>
-        <Logo className="header__logo-icon"/>
+        <LogoIcon className="header__logo-icon"/>
       </Link>
-      <NavItems orientation="vertical" className="header__nav header__nav--mobile">
-        {navLinks}
-      </NavItems>
+      <BurgerButton open={isDrawerOpen} onToggle={() => setIsDrawerOpen((o) => !o)}/>
+
+      <Drawer open={isDrawerOpen} onClose={() => setIsDrawerOpen(false)}>
+        <NavItems orientation="vertical" className="header__nav header__nav--mobile">
+          {navLinks}
+        </NavItems>
+      </Drawer>
 
       <NavItems orientation="horizontal" className="header__nav header__nav--desktop">
         {navLinks}
