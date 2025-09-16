@@ -27,7 +27,7 @@
     transform: translateX(100%)
     z-index: 1
     // from 360px and above use fixed 360px drawer
-    @include m.respond(mobile)
+    @include m.from(mobile)
       width: 360px
 
   &--open

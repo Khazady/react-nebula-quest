@@ -8,18 +8,18 @@
   height: 48px
   padding: 0 20px
 
-  @include m.respond(tablet)
+  @include m.from(tablet)
     height: 80px
     padding: 0 30px
 
-  @include m.respond(desktop)
+  @include m.from(desktop)
     padding: 0 80px
 
   &__logo
     height: 24px
     width: 71px
 
-    @include m.respond(desktop)
+    @include m.from(desktop)
       width: 105px
 
     &-icon
@@ -30,11 +30,11 @@
   &__nav--desktop
     display: none
 
-    @include m.respond(tablet)
+    @include m.from(tablet)
       display: block
 
   &__nav--mobile
     display: block
 
-    @include m.respond(tablet)
+    @include m.from(tablet)
       display: none
