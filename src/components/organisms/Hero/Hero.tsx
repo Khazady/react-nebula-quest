@@ -1,6 +1,5 @@
 import {Button} from "@/components/atoms";
 import {dictionary} from "@/lib/dictionary";
-import planetUrl from "./planet.webp";
 import "./Hero.sass";
 
 export const Hero: React.FC = () => {
@@ -18,7 +17,6 @@ export const Hero: React.FC = () => {
         </p>
         <Button variant="primary">{hero.button}</Button>
       </div>
-      <img className="hero__planet" src={planetUrl} alt="Planet"/>
     </section>
   );
 };

@@ -6,7 +6,6 @@
   width: 100%
   position: relative
   overflow: hidden
-  background: f.gradient(overlay-bottom), url('./bg-hero.webp') center / cover no-repeat, f.color(bg-primary)
   white-space: pre-line
 
   @include m.flex-center
@@ -57,25 +56,3 @@
 
 .hero__subtitle-accent
   color: f.color(accent-primary)
-
-
-.hero__planet
-  position: absolute
-
-  top: -105px
-  left: 16px
-
-  width: 300px
-  min-width: 300px
-  height: 336px
-
-  @include m.from(tablet)
-    top: 26px
-    left: unset
-    right: -90px
-  @include m.from(desktop)
-    top: 59px
-    left: unset
-    right: 70px
-
-

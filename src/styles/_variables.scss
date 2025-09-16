@@ -10,7 +10,8 @@ $colors: (
 
 $gradients: (
   overlay-bottom: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(15, 20, 32, 0.79) 100%),
-  text-accent: linear-gradient(98.25deg, #ebff00 18.56%, #ff70d9 76.02%),
+  text-accent: linear-gradient(98.25deg, map-get($colors, accent-primary) 18.56%, #ff70d9 76.02%),
+  page-bg: linear-gradient(196.2deg, map-get($colors, bg-primary) 0%, map-get($colors, bg-secondary) 100%),
 ) !default;
 
 $breakpoints: (
