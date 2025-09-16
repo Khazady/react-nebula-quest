@@ -8,6 +8,11 @@ $colors: (
   text-primary: #ffffff,
 ) !default;
 
+$gradients: (
+  overlay-bottom: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(15, 20, 32, 0.79) 100%),
+  text-accent: linear-gradient(98.25deg, #ebff00 18.56%, #ff70d9 76.02%),
+) !default;
+
 $breakpoints: (
   mobile: 360px,
   tablet: 768px,
