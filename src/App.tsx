@@ -1,13 +1,15 @@
 import "./App.sass";
+import {Footer, Header, Hero, Offers} from "./components/organisms";
 
 function App() {
   return (
     <>
-      <header/>
+      <Header/>
       <main>
-        <div/>
+        <Hero/>
+        <Offers/>
       </main>
-      <footer/>
+      <Footer/>
     </>
   );
 }
