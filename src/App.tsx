@@ -1,5 +1,5 @@
 import "./App.sass";
-import {Footer, Header, Hero, Offers} from "./components/organisms";
+import {About, Footer, Header, Hero, Offers} from "./components/organisms";
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <main className='main'>
         <Hero/>
         <Offers/>
+        <About/>
       </main>
       <Footer/>
     </>
