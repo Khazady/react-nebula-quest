@@ -10,19 +10,20 @@ html, body
   width: 100%
   height: 100%
   font-family: "Lato", "Roboto", sans-serif
+  font-weight: f.weight(bold)
   overscroll-behavior: none
 
 body
   -webkit-font-smoothing: antialiased
-  background: url('components/organisms/Hero/planet.webp') left 20px top -60px / 300px 336px no-repeat, f.gradient(overlay-bottom) center top 15px / auto 500px no-repeat, url('assets/images/background.webp') center top 15px / auto 500px no-repeat, url('assets/images/mirrored-background.png') center top 15px / auto 500px repeat-x, f.gradient(page-bg)
   color: f.color(text-primary)
 
+  background: url('components/organisms/Hero/planet.webp') left 20px top -60px / 300px 336px no-repeat, f.gradient(overlay-bottom) center top 15px / auto 500px no-repeat, url('assets/images/background.webp') center top 15px / auto 500px no-repeat, url('assets/images/mirrored-background.png') center top 15px / auto 500px repeat-x, f.gradient(page-bg)
 
   @include m.from(tablet)
     background-position: right -95px top 106px, center top 15px, center top 15px, center top 15px, 0 0
   @include m.from(desktop)
     background-position: right 70px top 140px, center top 15px, center top 15px, center top 15px, 0 0
-    background-size: 300px 336px, 100% 570px, auto 570px, auto 570px, auto
+    background-size: 300px 336px, 100% 570px, auto 570px, auto 570px, 100% 100%
 
 img, picture, video, canvas, svg
   display: block
