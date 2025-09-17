@@ -9,27 +9,20 @@
   white-space: pre-line
 
   @include m.flex-center
-  @include m.from(tablet)
-    height: 420px
-    justify-content: start
-  @include m.from(desktop)
-    height: 490px
-
-
-.hero__content
-  z-index: 1
-
-  @include m.flex-center
   flex-direction: column
   gap: 17px
   text-align: center
   margin: auto 0 44px
 
+
   @include m.from(tablet)
+    height: 420px
     text-align: start
     align-items: start
     gap: 22px
     margin: 0
+  @include m.from(desktop)
+    height: 490px
 
 .hero__title
   font-size: 36px
