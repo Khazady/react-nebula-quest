@@ -1,0 +1,21 @@
+@use "@/styles/functions" as f
+@use "@/styles/mixins" as m
+
+.footer
+  position: relative
+  height: 127px
+
+  @include m.flex-center
+  flex-direction: column
+  background: f.color(bg-chrome)
+
+.footer__rocket
+  position: absolute
+  transform: scale(0.7)
+
+.footer__text
+  font-size: 18px
+  color: f.color(accent-primary)
+  font-weight: f.weight(extrabold)
+
+  margin: auto 0 18px
