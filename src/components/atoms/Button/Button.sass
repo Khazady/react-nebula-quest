@@ -11,18 +11,29 @@
   align-items: center
   justify-content: center
 
-.button--primary
-  background: f.color(accent-primary)
-  color: f.color(bg-chrome)
 
-  border-radius: 100px
+.button--primary,
+.button--secondary
   padding: 7px 40px
   font-size: 16px
+  border-radius: 100px
   transition: opacity .2s ease
 
   &:hover
     opacity: 0.6
 
+.button--primary
+  background: f.color(accent-primary)
+  color: f.color(bg-chrome)
+
   @include m.from(tablet)
+    padding: 14px 40px
+    font-size: 22px
+
+.button--secondary
+  border: 2px solid f.color(accent-primary)
+  color: f.color(accent-primary)
+
+  @include m.from(desktop)
     padding: 14px 40px
     font-size: 22px
