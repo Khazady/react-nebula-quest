@@ -1,0 +1,24 @@
+@use "@/styles/functions" as f
+@use "@/styles/mixins" as m
+
+.readmore__toggle
+  display: none
+
+.readmore__content
+  display: none
+
+.readmore__toggle:checked ~ .readmore__content
+  display: block
+
+.readmore__button
+  // visual styles are expected via buttonClassName (e.g., .about__button)
+  cursor: pointer
+
+.readmore__button-label--on
+  display: none
+
+.readmore__toggle:checked ~ .readmore__button .readmore__button-label--off
+  display: none
+
+.readmore__toggle:checked ~ .readmore__button .readmore__button-label--on
+  display: inline
