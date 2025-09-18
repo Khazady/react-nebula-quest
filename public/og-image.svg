@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1e48"/>
+      <stop offset="1" stop-color="#304571"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ebff00"/>
+      <stop offset="1" stop-color="#ff70d9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g transform="translate(80, 120)">
+    <text x="0" y="0" fill="#fff" font-family="Lato, Roboto, Arial, sans-serif" font-size="72" font-weight="800">Discover the Vast Expanse of</text>
+    <text x="0" y="96" font-family="Lato, Roboto, Arial, sans-serif" font-size="120" font-weight="800" fill="url(#accent)">Nebula Quest</text>
+    <text x="0" y="180" fill="#fff" font-family="Lato, Roboto, Arial, sans-serif" font-size="40" opacity="0.85">Space offers, journeys and more.</text>
+    <circle cx="980" cy="-20" r="120" fill="url(#accent)" opacity="0.35"/>
+  </g>
+</svg>
