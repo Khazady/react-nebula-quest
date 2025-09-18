@@ -40,3 +40,19 @@
 
   @include m.from(tablet)
     display: none
+
+.header__cart
+  display: inline-flex
+  align-items: center
+
+  &:hover .header__cart-icon--default
+    display: none
+
+  &:hover .header__cart-icon--hover
+    display: inline-block
+
+.header__cart-icon
+  display: inline-block
+
+.header__cart-icon--hover
+  display: none
