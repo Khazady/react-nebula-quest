@@ -15,11 +15,13 @@ export const dictionary = {
       {
         title: 'Move the borders \n' +
           'of reality!',
-        text: 'Go on a space adventure '
+        text: 'Go on a space adventure - it\'s possible with us!'
       },
       {
-        title: 'Space is not just stars and planets',
-        text: 'it is a majestic journey to '
+        title: 'Space is not \n' +
+          'just stars and \n' +
+          'planets',
+        text: 'Go on a space adventure '
       },
       {
         title: 'For those \n' +
@@ -28,10 +30,12 @@ export const dictionary = {
         text: 'Our offer: make your dream come true'
       },
       {
-        title: 'Fulfill your fantastic dreams',
+        title: 'Fulfill your \n' +
+          'fantastic dreams',
         text: 'Space has never been so close'
       }
     ],
+    button: 'Learn more'
   },
   about: {
     title: 'Embark on a space journey',

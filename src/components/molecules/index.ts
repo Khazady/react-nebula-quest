@@ -2,3 +2,4 @@ export * from "./NavItems";
 export * from "./Drawer";
 export * from "./BurgerButton";
 export * from "./ReadMore";
+export * from "./OfferCard";

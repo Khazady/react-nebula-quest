@@ -1,0 +1,41 @@
+@use "@/styles/functions" as f
+@use "@/styles/mixins" as m
+
+.offer
+  height: 350px
+  overflow: hidden
+
+  border-radius: 10px
+  display: flex
+  flex-direction: column
+  justify-content: end
+  gap: 22px
+  padding: 27px
+
+  background: f.gradient(overlay-bottom) center / cover no-repeat, var(--offer-background-img) center / cover no-repeat
+
+  @include m.from(tablet)
+    padding: 35px
+
+
+.offer__title, .offer__text
+  font-weight: f.weight(extrabold)
+
+.offer__title
+  font-size: 40px
+  @include m.from(desktop)
+    font-size: 46px
+
+.offer__text
+  font-size: 16px
+  @include m.from(desktop)
+    font-size: 24px
+
+.offer__button
+
+.offer--featured
+  @include m.from(desktop)
+    .offer__title
+      font-size: 74px
+    .offer__text
+      font-size: 26px
