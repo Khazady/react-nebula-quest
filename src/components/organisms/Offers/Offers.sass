@@ -1,0 +1,29 @@
+@use "@/styles/functions" as f
+@use "@/styles/mixins" as m
+
+.offers
+  display: grid
+  grid-template-columns: 1fr
+  gap: 20px
+
+  @include m.from(tablet)
+    grid-template-columns: repeat(2, 1fr)
+    gap: 20px
+
+  @include m.from(desktop)
+    grid-template-columns: repeat(2, 1fr)
+    gap: 24px
+
+    > .offer--featured
+      grid-column: 1 / -1
+
+
+.offers__title
+  font-size: 18px
+  font-weight: f.weight(extrabold)
+  grid-column: 1 / -1
+
+  @include m.from(tablet)
+    font-size: 24px
+  @include m.from(desktop)
+    font-size: 32px
