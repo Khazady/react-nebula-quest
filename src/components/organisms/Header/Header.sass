@@ -17,26 +17,26 @@
   @include m.from(desktop)
     padding: 0 80px
 
-  &__logo
-    height: 24px
-    width: 71px
+.header__logo
+  height: 24px
+  width: 71px
 
-    @include m.from(desktop)
-      width: 105px
+  @include m.from(desktop)
+    width: 105px
 
-    &-icon
-      display: block
-      width: 100%
-      height: auto
+.header__logo-icon
+  display: block
+  width: 100%
+  height: auto
 
-  &__nav--desktop
-    display: none
+.header__nav--desktop
+  display: none
 
-    @include m.from(tablet)
-      display: block
-
-  &__nav--mobile
+  @include m.from(tablet)
     display: block
 
-    @include m.from(tablet)
-      display: none
+.header__nav--mobile
+  display: block
+
+  @include m.from(tablet)
+    display: none
