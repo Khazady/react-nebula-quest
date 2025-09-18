@@ -8,7 +8,7 @@
 
 html, body
   width: 100%
-  height: 100%
+  min-height: 100%
   font-family: "Lato", "Roboto", sans-serif
   font-weight: f.weight(bold)
   line-height: 1
@@ -18,7 +18,7 @@ body
   -webkit-font-smoothing: antialiased
   color: f.color(text-primary)
 
-  background: url('components/organisms/Hero/planet.webp') left 20px top -60px / 300px 336px no-repeat, f.gradient(overlay-bottom) center top 15px / auto 500px no-repeat, url('assets/images/background.webp') center top 15px / auto 500px no-repeat, url('assets/images/mirrored-background.png') center top 15px / auto 500px repeat-x, f.gradient(page-bg)
+  background: url('components/organisms/Hero/planet.webp') left 20px top -60px / 300px 336px no-repeat, f.gradient(overlay-bottom) center top 15px / auto 500px no-repeat, url('assets/images/background.webp') center top 15px / auto 500px no-repeat, url('assets/images/mirrored-background.png') center top 15px / auto 500px repeat-x, f.gradient(page-bg) no-repeat
 
   @include m.from(tablet)
     background-position: right -95px top 106px, center top 15px, center top 15px, center top 15px, 0 0
