@@ -5,10 +5,17 @@ import { Link } from "@/components/atoms";
 import { BurgerButton, Drawer, NavItems } from "@/components/molecules";
 import "./Header.sass";
 import { dictionary } from "@/lib/dictionary.ts";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useMediaQuery } from "@/lib/hooks/useMediaQuery";
 
 export const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const isTabletUp = useMediaQuery("(min-width: 768px)");
+
+  // Ensure drawer closes when switching to desktop layout
+  useEffect(() => {
+    if (isTabletUp && isDrawerOpen) setIsDrawerOpen(false);
+  }, [isTabletUp, isDrawerOpen]);
 
   const navLinks = [
     ...dictionary.header.nav.map((label) => (
@@ -32,21 +39,23 @@ export const Header = () => {
         onToggle={() => setIsDrawerOpen((o) => !o)}
       />
 
-      <Drawer open={isDrawerOpen} onClose={() => setIsDrawerOpen(false)}>
+      {isTabletUp ? (
         <NavItems
-          orientation="vertical"
-          className="header__nav header__nav--mobile"
+          orientation="horizontal"
+          className="header__nav header__nav--desktop"
         >
           {navLinks}
         </NavItems>
-      </Drawer>
-
-      <NavItems
-        orientation="horizontal"
-        className="header__nav header__nav--desktop"
-      >
-        {navLinks}
-      </NavItems>
+      ) : (
+        <Drawer open={isDrawerOpen} onClose={() => setIsDrawerOpen(false)}>
+          <NavItems
+            orientation="vertical"
+            className="header__nav header__nav--mobile"
+          >
+            {navLinks}
+          </NavItems>
+        </Drawer>
+      )}
     </header>
   );
 };
