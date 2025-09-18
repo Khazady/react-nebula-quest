@@ -14,7 +14,7 @@ export const Hero: React.FC = () => {
         {hero.subtitle}
         <span className="hero__subtitle-accent">{hero.subtitleAccent}</span>
       </p>
-      <Button variant="primary">{hero.button}</Button>
+      <Button variant="primary" className="hero__button">{hero.button}</Button>
     </section>
   );
 };

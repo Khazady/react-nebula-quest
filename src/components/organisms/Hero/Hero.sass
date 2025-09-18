@@ -8,11 +8,10 @@
   overflow: hidden
   white-space: pre-line
 
-  @include m.flex-center
+  display: flex
   flex-direction: column
   gap: 17px
   text-align: center
-  margin: auto 0 44px
 
 
   @include m.from(tablet)
@@ -25,6 +24,7 @@
     height: 490px
 
 .hero__title
+  margin-top: auto
   font-size: 36px
   font-weight: f.weight(extrabold)
 
@@ -47,3 +47,10 @@
 
 .hero__subtitle-accent
   color: f.color(accent-primary)
+
+.hero__button
+  margin-bottom: 44px
+  align-self: center
+  @include m.from(tablet)
+    align-self: start
+    margin-bottom: auto
