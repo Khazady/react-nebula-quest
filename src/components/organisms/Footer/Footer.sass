@@ -4,6 +4,11 @@
 .footer
   position: relative
   height: 127px
+  margin-top: 50px
+  @include m.from(tablet)
+    margin-top: 53px
+  @include m.from(desktop)
+    margin-top: 60px
 
   @include m.flex-center
   flex-direction: column
