@@ -1,4 +1,4 @@
-import rocketUrl from '@/assets/images/footer/rocket.png'
+import rocketUrl from '@/assets/images/footer/rocket.webp'
 import "./Footer.sass"
 import {dictionary} from "@/lib/dictionary.ts";
 

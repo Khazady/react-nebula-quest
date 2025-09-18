@@ -1,7 +1,7 @@
-import card1 from "@/assets/images/offers/card-1.png";
-import card2 from "@/assets/images/offers/card-2.png";
-import card3 from "@/assets/images/offers/card-3.png";
-import card4 from "@/assets/images/offers/card-4.png";
+import card1 from "@/assets/images/offers/card-1.webp";
+import card2 from "@/assets/images/offers/card-2.webp";
+import card3 from "@/assets/images/offers/card-3.webp";
+import card4 from "@/assets/images/offers/card-4.webp";
 import {OfferCard} from "@/components/molecules";
 import {dictionary} from "@/lib/dictionary.ts";
 import "./Offers.sass";
