@@ -1,10 +1,9 @@
-import {dictionary} from "@/lib/dictionary";
-import {ReadMore} from "@/components/molecules";
+import { dictionary } from "@/lib/dictionary";
+import { ReadMore } from "@/components/molecules";
 import "./About.sass";
 
-
 export const About = () => {
-  const {about} = dictionary;
+  const { about } = dictionary;
 
   return (
     <section className="about">

@@ -1,5 +1,5 @@
 import react from "@vitejs/plugin-react";
-import {defineConfig} from "vite";
+import { defineConfig } from "vite";
 import svgr from "vite-plugin-svgr";
 
 export default defineConfig({
@@ -15,7 +15,7 @@ export default defineConfig({
             {
               name: "cleanupIds",
             },
-            {name: "convertPathData"},
+            { name: "convertPathData" },
           ],
         },
       },

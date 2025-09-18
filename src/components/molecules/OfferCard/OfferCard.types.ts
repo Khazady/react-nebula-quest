@@ -3,4 +3,4 @@ export type OfferCardProps = {
   text: string;
   imageUrl: string;
   featured?: boolean;
-}
+};

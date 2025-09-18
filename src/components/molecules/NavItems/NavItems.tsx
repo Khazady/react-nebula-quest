@@ -1,16 +1,20 @@
-import {cn} from "@/lib/utils/cn.ts";
-import {Children, type FC} from "react";
-import type {NavItemsProps} from "./NavItems.types";
+import { cn } from "@/lib/utils/cn.ts";
+import { Children, type FC } from "react";
+import type { NavItemsProps } from "./NavItems.types";
 import "./NavItems.sass";
 
-export const NavItems: FC<NavItemsProps> = ({children, orientation = 'horizontal', className}) => {
+export const NavItems: FC<NavItemsProps> = ({
+  children,
+  orientation = "horizontal",
+  className,
+}) => {
   return (
     <nav
       className={cn(
         "nav-items",
         orientation === "vertical" && "nav-items--vertical",
         orientation === "horizontal" && "nav-items--horizontal",
-        className
+        className,
       )}
     >
       <ul className="nav-items__list">

@@ -1,4 +1,4 @@
-export type ButtonVariant = 'primary' | 'secondary';
+export type ButtonVariant = "primary" | "secondary";
 
 export type ButtonProps = React.PropsWithChildren<{
   type?: React.ComponentProps<"button">["type"];

@@ -3,4 +3,3 @@ export type BurgerButtonProps = {
   onToggle: () => void;
   className?: string;
 };
-
