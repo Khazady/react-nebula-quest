@@ -6,6 +6,15 @@ React Nebula Quest is a space‑themed landing page.
 The project is structured according to the Atomic Design methodology,
 and styling is implemented with SASS (without CSS modules) using the BEM convention.
 
+## Node and npm versions
+
+Use the Node and npm versions specified in `package.json` under the `engines` field.
+Because `.npmrc` has `engine-strict=true`, using other versions will cause `npm install` to fail.
+
+For convenience, a `.nvmrc` file is provided:
+
+- Run `nvm use` in the project root (reads `.nvmrc`). If the version isn’t installed, run `nvm install` first.
+
 ## Installation
 
 1. Clone the repository to your local machine using `git clone https://github.com/Khazady/react-nebula-quest.git`.
